@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="form-box">
+        <form action="" name="Formfill" onsubmit="return validation()">
+            <h2>Login In</h2>
+            <p id="result"></p>
+          
+            <div class="input-box">
+                <box-icon type='solid' name='envelope' color="white"></box-icon>
+                <input type="email" name="Email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <box-icon type='solid' name='lock-alt' color="white"></box-icon>
+                <input type="password" name="Password" placeholder="Password">
+            </div>
+          
+            <div class="button">
+                <input type="submit" class="btn" onclick="validation()" value="Login">
+            </div>
+            <div class="group">
+                <span><a href="">Forget-Password</a></span>
+                <span><a href="index.html">Register</a></span>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

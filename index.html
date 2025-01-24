@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <form action="" name="formfill" onsubmit="return validational()">
+          <h2>Register</h2>
+          <p id="result"></p>
+          <div class="input-box">
+            <i class="bx bx-user"></i>
+            <input type="text" name="Username" placeholder="Username" />
+          </div>
+          <div class="input-box">
+            <i class="bx bx-envelope"></i>
+            <input type="email" name="Email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <i class="bx bx-lock"></i>
+            <input type="password" name="Password" placeholder="Password" />
+          </div>
+          <div class="input-box">
+            <i class="bx bx-lock"></i>
+            <input
+              type="password"
+              name="cPassword"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="button">
+            <input
+              type="submit"
+              class="btn"
+              onclick="validational()"
+              value="Register"
+            />
+          </div>
+          <div class="group">
+            <span><a href="">Forget-Password</a></span>
+            <span><a href="log in.html" target="_blank">Login</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup" id="popup">
+        <box-icon name="check-square" color="063d06" size="60px"></box-icon>
+
+        <h2>Thank You</h2>
+        <p>Your Registration was succesfull.Thank You!!</p>
+        <a href="log in.html" target="_blank"
+          ><button onclick="ClosesSlide()">OK</button></a
+        >
+      </div>
+    </div>
+
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
